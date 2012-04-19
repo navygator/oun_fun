@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  meter_id: 
+  date: 2012-04-19 10:15:39
+  time: 
+  value: 1.5
+  temperature: 1.5
+  pressure: 1.5
+  weight: 1.5
+
+two:
+  meter_id: 
+  date: 2012-04-19 10:15:39
+  time: 
+  value: 1.5
+  temperature: 1.5
+  pressure: 1.5
+  weight: 1.5

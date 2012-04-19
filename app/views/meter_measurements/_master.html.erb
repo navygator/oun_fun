@@ -1,0 +1,16 @@
+<%= table_for meter, :html => { :class => "master" } do |t| %>
+    <%= t.head do %>
+        <%= t.r do %>
+            <%= t.h('Счетчик', :class => "t-head") %>
+            <%= t.h(m.description) %>
+        <% end %>
+    <% end %>
+      <%= t.body do |m| %>
+        <% m.laboratory_datas.each do |lab| %>
+            <%= t.r do  %>
+                <%= t.d(h(lab.laboratory_parameter.name), :class => "t-head") %>
+                <%= t.d(h(lab.value)) %>
+            <% end %>
+        <% end %>
+    <% end %>
+<% end %>

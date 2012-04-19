@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  parameter_id: 
+  meter_id: 
+  start_at: 2012-04-19 10:12:12
+  end_at: 2012-04-19 10:12:12
+  value: 1.5
+
+two:
+  parameter_id: 
+  meter_id: 
+  start_at: 2012-04-19 10:12:12
+  end_at: 2012-04-19 10:12:12
+  value: 1.5

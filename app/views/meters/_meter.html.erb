@@ -1,0 +1,39 @@
+<%= table_for [meter], :html => { :class => "master" } do |t| %>
+    <%= t.head do %>
+        <%= t.r do %>
+            <%= t.h('Счетчик', :class => "t-head") %>
+            <%= t.h(meter.description) %>
+        <% end %>
+    <% end %>
+      <%= t.body do |m| %>
+        <% m.laboratory_datas.each do |lab| %>
+            <%= t.r do  %>
+                <%= t.d(h(lab.laboratory_parameter.name), :class => "t-head") %>
+                <%= t.d(h(lab.value)) %>
+            <% end %>
+        <% end %>
+    <% end %>
+<% end %>
+<div class="meter-image">
+  <%= image_tag "rails.png" %>
+</div>
+<%= table_for meter.volume_measurements, :html => { :class => "detail" } do |t| %>
+    <%= t.head do %>
+        <%= t.r do %>
+            <%= t.h('Параметр', :class => "t-head") %>
+            <%= t.h('Значение') %>
+            <%= t.h('Температура') %>
+            <%= t.h('Давление') %>
+            <%= t.h('Масса') %>
+        <% end %>
+    <% end %>
+      <%= t.body do |vm| %>
+        <%= t.r do  %>
+            <%= t.d(h(vm.time), :class => "t-head") %>
+            <%= t.d(h(vm.value)) %>
+            <%= t.d(h(vm.temperature)) %>
+            <%= t.d(h(vm.pressure)) %>
+            <%= t.d(h(link_to vm.weight, "##{vm.id}" )) %>
+        <% end %>
+    <% end %>
+<% end %>

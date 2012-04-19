@@ -1,0 +1,98 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+*/
+body{
+    font: 12px Tahoma;
+}
+.left-panel
+{
+    float: left;
+    margin-right: 3px;
+}
+.meters-info
+{
+    overflow-y:scroll;
+}
+
+.t-head {
+  background: url("DXR.axd.gif") repeat-x scroll center top rgb(226, 240, 255);
+  color: rgb(40, 59, 86);
+  border-color: rgb(163, 192, 232);
+}
+
+table {
+  width: 100%;
+  table-layout: fixed;
+  border: solid 1px #e8eef4;
+  border-collapse: collapse;
+  font: 12px Tahoma;
+}
+
+td, th {
+  border-width: 0 1px 1px 0 ;
+  border-style: solid;
+}
+
+thead {
+  float: left;
+  width: 20%
+}
+
+thead tr{
+  float: left;
+  width: 100%
+}
+
+thead th {
+  display: block;
+  padding: 5px;
+  text-align: left;
+  border-color: rgb(163, 192, 232);
+}
+
+tbody {
+  float: left;
+  width: 80%
+}
+
+tbody tr {
+  float: left;
+  width: 20%;
+}
+
+tbody td {
+  display: block;
+  padding: 5px;
+  border-color: #e8eef4;
+}
+
+.meter-image {
+  float: left;
+  width: 5%;
+}
+
+.detail {
+  width: 95%;
+}
+
+.detail thead {
+  width: 10%;
+}
+
+.detail tbody {
+  width: 90%;
+}
+
+.detail tbody tr {
+  width: 8.33%;
+}
