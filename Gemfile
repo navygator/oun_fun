@@ -7,7 +7,7 @@ gem 'rails', '3.2.2'
 
 gem 'sqlite3'
 gem "watu_table_builder", :require => "table_builder", :git => "git://github.com/watu/table_builder.git"
-
+gem 'bootstrap-sass', '2.0.0'
 
 # Gems used only for assets and not required
 # in production environments by default.

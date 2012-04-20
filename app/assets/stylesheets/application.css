@@ -19,17 +19,12 @@ body{
     float: left;
     margin-right: 3px;
 }
-.meters-info
-{
-    overflow-y:scroll;
+#tabs {
+    overflow: auto;
 }
-
-.t-head {
-  background: url("DXR.axd.gif") repeat-x scroll center top rgb(226, 240, 255);
-  color: rgb(40, 59, 86);
-  border-color: rgb(163, 192, 232);
+.meters-info {
+    #width: 100%;
 }
-
 table {
   width: 100%;
   table-layout: fixed;
@@ -41,36 +36,37 @@ table {
 td, th {
   border-width: 0 1px 1px 0 ;
   border-style: solid;
+  overflow: hidden;
 }
 
-thead {
+.vertical thead {
   float: left;
   width: 20%
 }
 
-thead tr{
+.vertical thead tr{
   float: left;
   width: 100%
 }
 
-thead th {
+.vertical thead th {
   display: block;
   padding: 5px;
   text-align: left;
   border-color: rgb(163, 192, 232);
 }
 
-tbody {
+.vertical tbody {
   float: left;
   width: 80%
 }
 
-tbody tr {
+.vertical tbody tr {
   float: left;
   width: 20%;
 }
 
-tbody td {
+.vertical tbody td {
   display: block;
   padding: 5px;
   border-color: #e8eef4;
@@ -95,4 +91,10 @@ tbody td {
 
 .detail tbody tr {
   width: 8.33%;
+}
+
+.t-head {
+  background: url("DXR.axd.gif") repeat-x scroll center top rgb(226, 240, 255);
+  color: rgb(40, 59, 86);
+  border-color: rgb(163, 192, 232) !important;
 }

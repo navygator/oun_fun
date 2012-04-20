@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120419061539) do
+ActiveRecord::Schema.define(:version => 20120420085351) do
 
   create_table "laboratory_data", :force => true do |t|
     t.integer  "parameter_id"
@@ -24,6 +24,13 @@ ActiveRecord::Schema.define(:version => 20120419061539) do
   end
 
   create_table "laboratory_parameters", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "meter_parameters", :force => true do |t|
+    t.integer  "meter_id"
     t.string   "name"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false

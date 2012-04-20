@@ -1,8 +1,8 @@
-<%= table_for [meter], :html => { :class => "master" } do |t| %>
+<%= table_for [meter], :html => { :class => "master vertical" } do |t| %>
     <%= t.head do %>
         <%= t.r do %>
             <%= t.h('Счетчик', :class => "t-head") %>
-            <%= t.h(meter.description) %>
+            <%= t.h(meter.meter_parameters.first.name) %>
         <% end %>
     <% end %>
       <%= t.body do |m| %>
@@ -17,7 +17,7 @@
 <div class="meter-image">
   <%= image_tag "rails.png" %>
 </div>
-<%= table_for meter.volume_measurements, :html => { :class => "detail" } do |t| %>
+<%= table_for meter.volume_measurements, :html => { :class => "detail vertical" } do |t| %>
     <%= t.head do %>
         <%= t.r do %>
             <%= t.h('Параметр', :class => "t-head") %>

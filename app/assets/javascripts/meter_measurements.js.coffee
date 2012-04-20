@@ -3,5 +3,9 @@
 # You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
 jQuery ->
   $('#datepicker').datepicker({
-    inline: true
+    inline: true,
+    firstDay: 1,
+    dayNamesMin: ["Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"]
   })
+jQuery ->
+  $("#tabs").tabs();
